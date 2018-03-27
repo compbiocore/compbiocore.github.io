@@ -20,14 +20,25 @@ import ablog
 
 # -- Project information -----------------------------------------------------
 
-project = 'Computational Biology Core'
-copyright = '2018, Computational Biology Core'
-author = 'Computational Biology Core'
+project = 'CBC Docs'
+copyright = '2018, August Guang'
+author = 'August Guang'
 
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
 release = ''
+
+# ablog options
+blog_title = 'CBC Documentation'
+blog_authors = {
+    'august': ('August Guang', 'http://augustguang.com')
+}
+blog_locations = {
+    'PVD': ('Providence, RI', 'http://brown.edu')
+}
+
+github_pages = "compbiocore"
 
 
 # -- General configuration ---------------------------------------------------
@@ -83,7 +94,7 @@ pygments_style = 'sphinx'
 
 # -- Options for HTML output -------------------------------------------------
 
-html_title = "Comp bio core"
+html_title = blog_title
 #version='0.0.1'
 #release='0.0.1'
 
@@ -111,7 +122,7 @@ html_static_path = ['_static']
 # default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
 # 'searchbox.html']``.
 #
-html_sidebars = {'**':['localtoc.html','searchbox.html']}
+html_sidebars = {'**':['about.html','localtoc.html','searchbox.html']}
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
@@ -203,5 +214,3 @@ intersphinx_mapping = {'https://docs.python.org/': None}
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
-
-github_pages = "compbiocore"

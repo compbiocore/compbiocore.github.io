@@ -3,13 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Computational Biology Core's documentation!
+Home
 ======================================================
 
+Welcome to the Computational Biology CORE at Brown University's software and workshop documentation page. Here you can find documentation on workshops we have conducted for the Brown community as well as documentation for software packages that we release.
+
+For more information on our mission, our staff, and ongoing activities, see `our Brown page <https://brown.edu/cis/data-science/compbiocore/>`_.
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
+   workshops
+   software
 
 
 Indices and tables
