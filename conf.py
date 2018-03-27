@@ -15,6 +15,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import ablog
 
 
 # -- Project information -----------------------------------------------------
@@ -48,10 +49,12 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'ablog'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
+templates_path.append(ablog.get_html_templates_path())
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -200,3 +203,5 @@ intersphinx_mapping = {'https://docs.python.org/': None}
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
+
+github_pages = "compbiocore"
