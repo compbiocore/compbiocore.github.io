@@ -13,12 +13,3 @@ Workshops
 	:category: workshops
 
 `CBC Workshops <https://compbiocore.github.io/cbc-workshops/html/index.html>`_
-
-blahblah
----------
-
-Is this not how this works...? ``needs help``
-blahblah
-
-::
-	$ blahblah

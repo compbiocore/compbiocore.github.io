@@ -12,12 +12,3 @@ Software
 	:category: software
 
 `Bioflows <https://compbiocore.github.io/bioflows/>`_
-
-blahblah
----------
-
-Is this not how this works...? ``needs help``
-blahblah
-
-::
-	$ blahblah
