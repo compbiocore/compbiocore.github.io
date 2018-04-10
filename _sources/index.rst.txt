@@ -14,13 +14,16 @@ For more information on our mission, our staff, and ongoing activities, see `our
    :maxdepth: 1
    :caption: Contents:
 
-   workshops
    software
+   workshops
 
 
-Indices and tables
-==================
+Why
+===================================================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+blahblah
+
+why not
+========
+
+blahblah

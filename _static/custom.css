@@ -1,1 +1,10 @@
 /* This file intentionally left blank. */
+@import url("default.css");
+
+.redtext {
+  color: red;
+}
+
+.bluetext {
+  color: blue;
+}
