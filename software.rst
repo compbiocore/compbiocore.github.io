@@ -3,7 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+
 Software
 ======================================================
+
+.. post:: 10 Apr, 2018
+	:tags: software
+	:category: software
 
 `Bioflows <https://compbiocore.github.io/bioflows/>`_

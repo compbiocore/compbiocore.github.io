@@ -10,17 +10,16 @@ Welcome to the Computational Biology CORE at Brown University's software and wor
 
 For more information on our mission, our staff, and ongoing activities, see `our Brown page <https://brown.edu/cis/data-science/compbiocore/>`_.
 
+Software
+==========
+
+`Bioflows <https://compbiocore.github.io/bioflows/>`_
+
+Workshops
+==========
+
+`CBC Workshops <https://compbiocore.github.io/cbc-workshops/html/index.html>`_
+
 .. toctree::
-   :maxdepth: 1
-   :caption: Contents:
-
-   workshops
-   software
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+	:hidden:
+	:glob:

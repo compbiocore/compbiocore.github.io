@@ -31,6 +31,7 @@ release = ''
 
 # ablog options
 blog_title = 'CBC Documentation'
+blog_baseurl = 'compbiocore.github.io'
 blog_authors = {
     'august': ('August Guang', 'http://augustguang.com')
 }
@@ -122,7 +123,8 @@ html_static_path = ['_static']
 # default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
 # 'searchbox.html']``.
 #
-html_sidebars = {'**':['about.html','localtoc.html','searchbox.html']}
+html_sidebars = {'**':['about.html','globaltoc.html','postcard.html','recentposts.html',
+    'archives.html','tagcloud.html','searchbox.html']}
 
 
 # -- Options for HTMLHelp output ---------------------------------------------

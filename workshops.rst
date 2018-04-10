@@ -3,7 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. _commands:
+
 Workshops
 ======================================================
+
+.. post:: 10 Apr, 2018
+	:tags: workshops
+	:category: workshops
 
 `CBC Workshops <https://compbiocore.github.io/cbc-workshops/html/index.html>`_
