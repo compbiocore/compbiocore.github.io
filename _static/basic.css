@@ -212,6 +212,7 @@ table.modindextable td {
 /* -- general body styles --------------------------------------------------- */
 
 div.body {
+    /*background-color: #4e3629;*/
     min-width: 450px;
     max-width: 800px;
 }
@@ -294,6 +295,7 @@ div.sidebar {
     border: 1px solid #ddb;
     padding: 7px 7px 0 7px;
     background-color: #ffe;
+    /*background-color: #4e3629;*/
     width: 40%;
     float: right;
 }
