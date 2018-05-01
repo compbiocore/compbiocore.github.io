@@ -11,4 +11,12 @@ Software
 	:tags: software
 	:category: software
 
-`Bioflows <https://compbiocore.github.io/bioflows/>`_
+You can find all of our software documentation here.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   Bioflows <https://compbiocore.github.io/bioflows/>
+
+   RSeqAn <https://compbiocore.github.io/RSeqAn/>
