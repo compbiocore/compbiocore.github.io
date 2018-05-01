@@ -4,7 +4,7 @@
  *
  * Sphinx stylesheet -- basic theme.
  *
- * :copyright: Copyright 2007-2018 by the Sphinx team, see AUTHORS.
+ * :copyright: Copyright 2007-2017 by the Sphinx team, see AUTHORS.
  * :license: BSD, see LICENSE for details.
  *
  */
@@ -82,20 +82,8 @@ div.sphinxsidebar input {
 }
 
 div.sphinxsidebar #searchbox input[type="text"] {
-    float: left;
-    width: 80%;
-    padding: 0.25em;
-    box-sizing: border-box;
+    width: 170px;
 }
-
-div.sphinxsidebar #searchbox input[type="submit"] {
-    float: left;
-    width: 20%;
-    border-left: none;
-    padding: 0.25em;
-    box-sizing: border-box;
-}
-
 
 img {
     border: 0;
@@ -211,12 +199,6 @@ table.modindextable td {
 
 /* -- general body styles --------------------------------------------------- */
 
-div.body {
-    /*background-color: #4e3629;*/
-    min-width: 450px;
-    max-width: 800px;
-}
-
 div.body p, div.body dd, div.body li, div.body blockquote {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
@@ -295,7 +277,6 @@ div.sidebar {
     border: 1px solid #ddb;
     padding: 7px 7px 0 7px;
     background-color: #ffe;
-    /*background-color: #4e3629;*/
     width: 40%;
     float: right;
 }
@@ -349,11 +330,6 @@ div.body p.centered {
 table.docutils {
     border: 0;
     border-collapse: collapse;
-}
-
-table.align-center {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 table caption span.caption-number {
@@ -469,12 +445,8 @@ dd {
     margin-left: 30px;
 }
 
-dt:target, span.highlighted {
+dt:target, .highlighted {
     background-color: #fbe54e;
-}
-
-rect.highlighted {
-    fill: #fbe54e;
 }
 
 dl.glossary dt {
