@@ -16,3 +16,8 @@ For more information on our mission, our staff, and ongoing activities, see `our
 	software
 	workshops
 	tutorials
+
+Contact
+'''''''
+
+For assistance, contact cbc-help@brown.edu - this is our general help line, so please specify that your issue is with this site's contents
