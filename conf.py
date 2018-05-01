@@ -67,6 +67,7 @@ extensions = [
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 templates_path.append(ablog.get_html_templates_path())
+#templates_path = [ablog.get_html_templates_path()]
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -108,12 +109,28 @@ html_theme = 'alabaster'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    'logo': 'brown_logo.png',
+    'logo_name': 'CBC Docs',
+    'github_user': 'compbiocore',
+    'github_repo': 'compbiocore',
+    'github_type': 'follow',
+    'github_button': 'true',
+    'github_count': 'true',
+    'analytics_id': 'UA-115983496-2',
+    'show_powered_by': 'false',
+    'sidebar_search_button': '#261000',
+    #'extra_nav_links': want these to be to the official page
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_css_files = ['custom.css',
+    'opensans.css' 'https://fonts.googleapis.com/css?family=Open+Sans',
+    'josefinsans.css' 'https://fonts.googleapis.com/css?family=Josefin+Sans']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.

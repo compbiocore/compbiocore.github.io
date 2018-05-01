@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Home
+Computational Biology CORE Documentation
 ======================================================
 
 Welcome to the Computational Biology CORE at Brown University's software and workshop documentation page. Here you can find documentation on workshops we have conducted for the Brown community as well as documentation for software packages that we release.
@@ -18,7 +18,7 @@ Software
 Workshops
 ==========
 
-`CBC Workshops <https://compbiocore.github.io/cbc-workshops/html/index.html>`_
+`Workshops <https://compbiocore.github.io/cbc-workshops/html/index.html>`_
 
 .. toctree::
 	:hidden:
