@@ -1,4 +1,4 @@
-baseURL: "http://cbc-index-site.s3-website-us-east-1.amazonaws.com"
+baseURL: "https://compbiocore.github.io/"
 languageCode: "en-us"
 title: "Computational Biology Core Projects"
 
