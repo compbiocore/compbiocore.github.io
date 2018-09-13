@@ -1,0 +1,27 @@
+<svg version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 464" style="enable-background:new 0 0 512 464;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#750787;}
+	.st1{clip-path:url(#SVGID_2_);fill:#004DFF;}
+	.st2{clip-path:url(#SVGID_2_);fill:#008026;}
+	.st3{clip-path:url(#SVGID_2_);fill:#FFED00;}
+	.st4{clip-path:url(#SVGID_2_);fill:#FF8C00;}
+	.st5{clip-path:url(#SVGID_2_);fill:#E40303;}
+</style>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M462.3,40.6C407.5-6.1,326,2.3,275.7,54.2L256,74.5l-19.7-20.3C186.1,2.3,104.5-6.1,49.7,40.6
+			c-62.8,53.6-66.1,149.8-9.9,207.9l193.5,199.8c12.5,12.9,32.8,12.9,45.3,0l193.5-199.8C528.4,190.4,525.1,94.2,462.3,40.6
+			L462.3,40.6z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<rect x="-97.8" y="4" class="st0" width="744.6" height="460"/>
+	<rect x="-97.8" y="4" class="st1" width="744.6" height="383.3"/>
+	<rect x="-97.8" y="4" class="st2" width="744.6" height="306.7"/>
+	<rect x="-97.8" y="4" class="st3" width="744.6" height="230"/>
+	<rect x="-97.8" y="4" class="st4" width="744.6" height="153.3"/>
+	<rect x="-97.8" y="4" class="st5" width="744.6" height="76.7"/>
+</g>
+</svg>
