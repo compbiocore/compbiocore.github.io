@@ -10,12 +10,12 @@
 </style>
 <g>
 	<defs>
-		<path id="SVGID_1_" d="M462.3,40.6C407.5-6.1,326,2.3,275.7,54.2L256,74.5l-19.7-20.3C186.1,2.3,104.5-6.1,49.7,40.6
+		<path id="SVGID_3_" d="M462.3,40.6C407.5-6.1,326,2.3,275.7,54.2L256,74.5l-19.7-20.3C186.1,2.3,104.5-6.1,49.7,40.6
 			c-62.8,53.6-66.1,149.8-9.9,207.9l193.5,199.8c12.5,12.9,32.8,12.9,45.3,0l193.5-199.8C528.4,190.4,525.1,94.2,462.3,40.6
 			L462.3,40.6z"/>
 	</defs>
 	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
 	</clipPath>
 	<rect x="-97.8" y="4" class="st0" width="744.6" height="460"/>
 	<rect x="-97.8" y="4" class="st1" width="744.6" height="383.3"/>
