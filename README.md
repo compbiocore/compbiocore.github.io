@@ -30,3 +30,28 @@ npm install
 Sensitive environment variables are stored in the .env file. This file is included in .gitignore intentionally, so that it is never committed.
 - Create a `.env` file and copy into it the contents of `.env.template`
 - Get your [GitHub Access Token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and add to the `.env` file.
+
+### Local development
+Get the data
+```bash
+gulp data
+```
+Start gulp to watch and compile `.sass`
+```bash
+# in a terminal window
+gulp
+```
+Start the server
+```bash
+# in a different terminal window
+hugo serve -D
+```
+
+### Build site locally
+This will build the site in the `public/` directory.
+```bash
+hugo
+```
+
+### Deployment
+The site is deployed to GitHub Pages using Travis. Changes to the site should be done in the Hugo project (`hugo-site` branch). Never commit to `master`, that branch will be updated by Travis whenever a new build is done.
