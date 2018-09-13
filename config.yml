@@ -1,0 +1,21 @@
+baseURL: "http://cbc-index-site.s3-website-us-east-1.amazonaws.com"
+languageCode: "en-us"
+title: "Computational Biology Core Projects"
+
+# Site params
+params:
+    description: "Here you can find documentation from workshops we conducted at Brown, as well as documentation for our software packages, tutorials, and best practices."
+    email: cbc-help@brown.edu
+    copyright: Computational Biology Core - Data Science Practice - Brown University
+    organization: Computational Biology Core
+    address: 3 Davol Sq., Providence RI 02903
+
+# Menu items
+menu:
+  main:
+  - name: About
+    weight: 1
+    url: /about
+  - name: Contact
+    weight: 2
+    url: /contact

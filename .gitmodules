@@ -1,3 +1,0 @@
-[submodule "jupyterfleet"]
-	path = jupyterfleet
-	url = https://github.com/compbiocore/jupyterfleet.git

@@ -1,0 +1,34 @@
+language: go
+go:
+  - "1.8"
+  
+git:
+  depth: 10
+
+sudo: required
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install node -y
+  - go get -u -v github.com/gohugoio/hugo
+  - npm install -g gulp
+
+install:
+  - npm install
+
+script:
+  - gulp sass data && hugo
+
+before_deploy:
+  - gulp sass data && hugo
+
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: $AWS_S3_BUCKET_DEV
+    skip_cleanup: true
+    local-dir: public
+    acl: public_read
+    on:
+      branch: master
