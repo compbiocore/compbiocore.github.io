@@ -1,0 +1,14 @@
+<footer>
+<div class="footer">
+  <div>
+    {{ readFile "/static/svg/brown.svg" | safeHTML }}
+    <p>{{ .Site.Params.organization }}</p>
+    <p>{{ .Site.Params.address }}</p>
+    <a href="mailto:{{ .Site.Params.email }}"><p>{{ .Site.Params.email }}</p></a>
+  </div>
+</div>
+<div class="copyright">
+  <small><span class="far fa-copyright"></span>&nbsp;&nbsp;{{ .Site.Params.copyright }}</small>
+  <small class="heart">Built with&nbsp;<span>{{ readFile "/static/svg/heart-rainbow.svg" | safeHTML }}</span>with <a href="https://gohugo.io">Hugo</a></small>
+</div>
+</footer>

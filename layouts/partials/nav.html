@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-md">
+  {{$permalink := .Permalink}}
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">{{ .Title }}</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse nav-pills flex-column flex-sm-row justify-content-end" id="collapsibleNavbar">
+    {{ range .Site.Menus.main }}
+    <div class="flex-sm-fill text-sm-right nav-link nav-item" >
+      <a {{if in $permalink .URL }}class="active"{{end}} href="{{.URL}}">{{.Name}}</a>
+    </div>
+    {{ end }}
+  </div>
+</nav>

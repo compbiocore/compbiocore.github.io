@@ -1,0 +1,34 @@
+<div class="section">
+    <div class="section-title">
+        <h1>Tutorials</h1>
+        <hr></hr>
+    </div>
+    <div class="section-group">
+    {{ range .Site.Data.info }}
+        {{ if eq .type "tutorial" }}
+        <div class="group-card">
+            <small>{{ .site_author }}</small>
+            <a href="{{ if .docs_url }}{{ .docs_url }}{{ else }}https://compbiocore.github.io/{{ .repo }}{{ end }}">
+                <div class="group-card-title">
+                    <h6>{{ .site_name }}</h6>
+                    <a href="{{ .repo_url }}">
+                        <span class="fab fa-2x fa-github"></span>
+                    </a>
+                </div>
+                <p>{{ .site_description }}</p>
+            </a>
+            <div class="group-status">
+                <a href="{{ if .docs_url }}{{ .docs_url }}{{ else }}https://compbiocore.github.io/{{ .repo }}{{ end }}">
+                    <img src="https://img.shields.io/badge/docs-stable-blue.svg?style=flat-square"/>
+                </a>
+                {{ if .doi }}
+                <a href='https://doi.org/{{ .doi }}'>
+                    <img src='https://img.shields.io/badge/DOI-{{ replace (replace (replace .doi "/" "%2F") "_" "__") "-" "--" }}-purple.svg?style=flat-square'/>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    {{ end }}
+    </div>
+</div>
