@@ -23,12 +23,11 @@ before_deploy:
   - gulp sass data && hugo
 
 deploy:
-  - provider: s3
-    access_key_id: $AWS_ACCESS_KEY_ID
-    secret_access_key: $AWS_SECRET_ACCESS_KEY
-    bucket: $AWS_S3_BUCKET_DEV
-    skip_cleanup: true
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep-history: true
     local-dir: public
-    acl: public_read
+    target_branch: master
     on:
       branch: hugo-site
