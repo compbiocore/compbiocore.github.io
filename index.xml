@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computational Biology Core Projects</title>
-    <link>http://cbc-index-site.s3-website-us-east-1.amazonaws.com/</link>
+    <link>https://compbiocore.github.io/</link>
     <description>Recent content on Computational Biology Core Projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://cbc-index-site.s3-website-us-east-1.amazonaws.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://compbiocore.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

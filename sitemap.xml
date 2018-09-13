@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://cbc-index-site.s3-website-us-east-1.amazonaws.com/categories/</loc>
+    <loc>https://compbiocore.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cbc-index-site.s3-website-us-east-1.amazonaws.com/</loc>
+    <loc>https://compbiocore.github.io/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cbc-index-site.s3-website-us-east-1.amazonaws.com/tags/</loc>
+    <loc>https://compbiocore.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
