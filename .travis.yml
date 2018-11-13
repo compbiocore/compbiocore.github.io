@@ -17,10 +17,10 @@ install:
   - npm install
 
 script:
-  - gulp sass data && hugo
+  - gulp sass && hugo
 
 before_deploy:
-  - gulp sass data && hugo
+  - gulp sass && hugo
 
 deploy:
   - provider: pages

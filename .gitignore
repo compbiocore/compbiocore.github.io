@@ -2,4 +2,3 @@ node_modules
 static/styles/css/
 .env
 public/
-data/info.json

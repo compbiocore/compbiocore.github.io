@@ -1,0 +1,84 @@
+[
+  {
+    "repo": "bioflows",
+    "site_name": "Bioflows",
+    "site_author": "Ashok Ragavendran",
+    "repo_url": "https://github.com/compbiocore/bioflows",
+    "site_description": "A workflow engine developed by the Computational Biology Core.",
+    "docs_url": "https://compbiocore.github.io/bioflows/",
+    "type": "software"
+  },
+  {
+    "repo": "r-workshop-1",
+    "site_name": "R Workshop 1",
+    "site_author": "Andrew Leith",
+    "site_description": "Fundamentals of R Workshop",
+    "site_url": "https://compbiocore.github.io/",
+    "type": "workshop"
+  },
+  {
+    "repo": "bioconductor-workshop-1",
+    "site_name": "Bioconductor Workshop 1",
+    "site_author": "Andrew Leith",
+    "site_description": "Bioconductor Workshop 1",
+    "docs_url": "https://compbiocore.github.io/bioconductor-workshop-1",
+    "type": "workshop"
+  },
+  {
+    "repo": "bioconductor-workshop-2",
+    "site_name": "Bioconductor Workshop 2",
+    "site_author": "Andrew Leith",
+    "site_description": "Bioconductor Workshop 2",
+    "docs_url": "https://compbiocore.github.io/bioconductor-workshop-2",
+    "type": "workshop"
+  },
+  {
+    "repo": "cbc-workshop-directory",
+    "site_name": "CBC Workshop Directory",
+    "site_author": "Andrew Leith",
+    "site_description": "CBC Workshop Directory",
+    "docs_url": "https://compbiocore.github.io/cbc-workshop-directory",
+    "type": "workshop"
+  },
+  {
+    "repo": "jupyterfleet",
+    "site_name": "JupyterFleet",
+    "site_author": "Andrew Leith",
+    "site_description": "Software for Automating Jupyter Deployment on AWS",
+    "docs_url": "https://compbiocore.github.io/jupyterfleet",
+    "type": "software"
+  },
+  {
+    "repo": "cbc-linux-tutorial",
+    "site_name": "CBC Linux Tutorial",
+    "site_author": "Andrew Leith",
+    "site_description": "An elementary Linux tutorial prepared for Nicola Neretti's BIOL2010 by Andrew Leith",
+    "docs_url": "https://compbiocore.github.io/cbc-linux-tutorial",
+    "type": "tutorial"
+  },
+  {
+    "repo": "single-cell-workshop",
+    "site_name": "Single Cell Workshop",
+    "site_author": "Andrew Leith",
+    "site_description": "Single Cell Workshop",
+    "docs_url": "https://compbiocore.github.io/single-cell-workshop",
+    "type": "workshop"
+  },
+  {
+    "repo": "refchef",
+    "site_name": "RefChef",
+    "site_author": "Andrew Leith",
+    "site_description": "Reference Management Software",
+    "docs_url": "https://compbiocore.github.io/refchef",
+    "type": "software"
+  },
+  {
+    "repo": "cbc-documentation-templates",
+    "site_name": "CBS's Documentation and Best Practices",
+    "site_author": "Fernando Gelin",
+    "repo_url": "https://github.com/compbiocore/cbc-documentation-templates",
+    "site_description": "Documentation templates and best-practices for Brown's Computational Biology Core.",
+    "docs_url": "https://compbiocore.github.io/cbc-documentation-templates/",
+    "type": "documentation"
+  }
+]
