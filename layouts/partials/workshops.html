@@ -7,7 +7,14 @@
     {{ range .Site.Data.info }}
         {{ if eq .type "workshop" }}
         <div class="group-card">
-            <small>{{ .site_author }}</small>
+            <div class="authors">
+                <small class="maintainers">Instructors:</small>
+            {{ range $i, $e := .authors }}
+                <a href="https://www.github.com/{{ $e.github_user }}">
+                    <small>{{ if $i }}&#x25E6; {{ end }}{{ $e.name }}</small>
+                </a>
+            {{ end }}
+            </div>
             <a href="{{ if .docs_url }}{{ .docs_url }}{{ else }}https://compbiocore.github.io/{{ .repo }}{{ end }}">
                 <div class="group-card-title">
                     <h6>{{ .site_name }}</h6>

@@ -7,7 +7,14 @@
     {{ range .Site.Data.info }}
         {{ if eq .type "software" }}
         <div class="group-card">
-            <small>{{ .site_author }}</small>
+            <div class="authors">
+                <small class="maintainers">Maintainers:</small>
+            {{ range $i, $e := .authors }}
+                <a href="https://www.github.com/{{ $e.github_user }}">
+                    <small>{{ if $i }}&#x25E6; {{ end }}{{ $e.name }}</small>
+                </a>
+            {{ end }}
+            </div>
             <a href="{{ if .docs_url }}{{ .docs_url }}{{ else }}https://compbiocore.github.io/{{ .repo }}{{ end }}">
                 <div class="group-card-title">
                     <h6>{{ .site_name }}</h6>
@@ -25,6 +32,11 @@
                 {{ if .doi }}
                 <a href='https://doi.org/{{ .doi }}'>
                     <img src='https://img.shields.io/badge/DOI-{{ replace (replace (replace .doi "/" "%2F") "_" "__") "-" "--" }}-purple.svg?style=flat-square'/>
+                </a>
+                {{ end }}
+                {{ if .pypi }}
+                <a href='https://pypi.org/project/{{ .site_name }}/'>
+                    <img src='https://img.shields.io/pypi/v/{{ .site_name }}.svg?style=flat-square'/>
                 </a>
                 {{ end }}
             </div>
