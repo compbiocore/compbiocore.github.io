@@ -9,6 +9,8 @@ params:
     copyright: Computational Biology Core - Data Science Practice - Brown University
     organization: Computational Biology Core
     address: 3 Davol Sq., Providence RI 02903
+    brown_url: "https://www.brown.edu"
+    cbc_url: "http://brown.edu/cis/data-science/compbiocore/index.html"
 
 # Menu items
 menu:
