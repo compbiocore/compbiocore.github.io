@@ -1,7 +1,7 @@
 body
   padding-left: $base-line-height
   padding-right: $base-line-height
-
+  // background-color: #CCC6B8 !important
 img
   max-width: 100%
 
@@ -50,9 +50,8 @@ div, a
   justify-content: center
   align-items: center
   svg
-    margin-right: 1rem
-    margin-left: 1rem
-    height: 20ex
+    margin-left: 8rem
+    height: 40ex
     +respond-to(smaller-screens)
       height: 16ex
       padding: 2rem 0 1rem 0
@@ -63,7 +62,7 @@ div, a
     .st0c
       fill: none
       stroke: white
-      stroke-width: 4px
+      stroke-width: 2px
 
 .title-group
   flex: 2 1 0
@@ -73,11 +72,15 @@ div, a
 // Main Groups
 
 .section
+  background-color: white
   display: flex
   flex-direction: column
   flex-wrap: wrap
   justify-content: space-around
-  padding: 3rem
+  padding: 2rem
+  margin-left: 5%
+  margin-top: -3rem
+  width: 90%
 
 .section-title
   margin-bottom: 1rem
@@ -131,16 +134,16 @@ footer
   margin-left: -2rem
   margin-right: -2rem
 
-.footer
-  padding: 4rem 0 2rem 8rem
-  display: flex
-  flex-direction: row
-  align-items: center
-  justify-content: flex-start
-  svg
-    margin-bottom: 1rem
-    height: 3rem
-    fill: $light-gray-2
+// .footer
+//   padding: 4rem 0 2rem 8rem
+//   display: flex
+//   flex-direction: row
+//   align-items: center
+//   justify-content: flex-start
+//   svg
+//     margin-bottom: 1rem
+//     height: 3rem
+//     fill: $light-gray-2
 
 .copyright
   display: flex
