@@ -1,4 +1,4 @@
-<footer>
+<!-- <footer>
 <div class="footer">
   <div>
     {{ readFile "/static/svg/brown.svg" | safeHTML }}
@@ -11,4 +11,19 @@
   <small><span class="far fa-copyright"></span>&nbsp;&nbsp;{{ .Site.Params.copyright }}</small>
   <small class="heart">Built with&nbsp;<span>{{ readFile "/static/svg/heart-rainbow.svg" | safeHTML }}</span>with <a href="https://gohugo.io">Hugo</a></small>
 </div>
+</footer> -->
+<footer class="cbc-footer">
+  <div class="cbc-footer-inner">
+    <div>
+      <h1>{{ .Site.Params.organization }}</h1>
+      <p>Data Science Practice</p>
+      <p>{{ .Site.Params.address }}</p>
+    </div>
+    <div>
+    </div>
+    <div>
+      <a href="https://datasci.brown.edu"><span class="fas fa-external-link-square-alt"></span>&nbsp;&nbsp;<p>datasci.brown.edu/compbiocore</p></a>
+      <a href="mailto:{{ .Site.Params.email }}"><span class="fas fa-envelope"></span>&nbsp;&nbsp;<p>{{ .Site.Params.email }}</p></a>
+    </div>
+  </div>
 </footer>
