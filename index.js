@@ -35,9 +35,10 @@ const githubRequest = (path) => {
  * content using the readme API.
  *
  */
-githubRequest(`orgs/${organization}/repos`).then((values) => {
+githubRequest(`orgs/${organization}/repos?per_page=100`).then((values) => {
   // gets the contents of the repos
   return Promise.all(values.map((repo) => {
+    console.log(repo.name)
     return githubRequest(`repos/${organization}/${repo.name}/contents`)
   }));
 }).then((values) => {
