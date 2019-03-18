@@ -12,6 +12,18 @@ params:
     brown_url: "https://www.brown.edu"
     cbc_url: "http://brown.edu/cis/data-science/compbiocore/index.html"
 
+    menu:
+      cbc:
+        - name: Support
+          url: http://cbc.brown.edu/support/index.html
+        - name: Services
+          url: http://cbc.brown.edu/services/index.html
+        - name: Resources
+          url: http://cbc.brown.edu/resources/index.html
+        - name: About
+          url: http://cbc.brown.edu/about/index.html
+
+
 # Menu items
 menu:
   main:
