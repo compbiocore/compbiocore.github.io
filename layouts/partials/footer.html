@@ -16,13 +16,13 @@
   <div class="cbc-footer-inner">
     <div>
       <h1>{{ .Site.Params.organization }}</h1>
-      <p>Data Science Practice</p>
+      <p>{{.Site.Params.ccv}}</p>
       <p>{{ .Site.Params.address }}</p>
     </div>
     <div>
     </div>
     <div>
-      <a href="https://datasci.brown.edu"><span class="fas fa-external-link-square-alt"></span>&nbsp;&nbsp;<p>datasci.brown.edu/compbiocore</p></a>
+      <a href="https://datasci.brown.edu"><span class="fas fa-external-link-square-alt"></span>&nbsp;&nbsp;<p>{{.Site.Params.cbc_url}}</p></a>
       <a href="mailto:{{ .Site.Params.email }}"><span class="fas fa-envelope"></span>&nbsp;&nbsp;<p>{{ .Site.Params.email }}</p></a>
     </div>
   </div>

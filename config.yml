@@ -10,7 +10,8 @@ params:
     organization: Computational Biology Core
     address: 3 Davol Sq., Providence RI 02903
     brown_url: "https://www.brown.edu"
-    cbc_url: "http://brown.edu/cis/data-science/compbiocore/index.html"
+    cbc_url: "http://cbc.brown.edu"
+    ccv: Center for Computation and Visualization
 
     menu:
       cbc:
