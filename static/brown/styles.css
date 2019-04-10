@@ -637,9 +637,10 @@ textarea {
   display: none !important; }
 
 .marginator {
-  max-width: 1300px;
+  padding-left: 6%;
   margin: 0 auto;
-  width: 92%; }
+  padding-right: 6%;
+ }
 .marginator::before, .marginator::after {
   content: "";
   clear: both;
