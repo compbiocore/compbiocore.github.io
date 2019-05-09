@@ -15,14 +15,17 @@ params:
 
     menu:
       cbc:
-        - name: Support
-          url: http://cbc.brown.edu/support/index.html
-        - name: Services
-          url: http://cbc.brown.edu/services/index.html
-        - name: Resources
-          url: http://cbc.brown.edu/resources/index.html
         - name: About
-          url: http://cbc.brown.edu/about/index.html
+          url: https://cbc.brown.edu/about/
+        - name: Support
+          url: https://cbc.brown.edu/support/
+        - name: Services
+          url: https://cbc.brown.edu/services/
+        - name: Resources
+          url: https://cbc.brown.edu/resources/
+        - name: Blog
+          url: https://cbc.brown.edu/blog/
+
 
 
 # Menu items
