@@ -6,13 +6,13 @@ googleAnalytics: UA-115983496-2
 params:
     description: "Here you can find documentation from workshops we conducted at Brown, as well as documentation for our software packages, tutorials, and best practices."
     email: cbc-help@brown.edu
-    copyright: Computational Biology Core - Data Science Practice - Brown University
+    copyright: Computational Biology Core - Brown University
     organization: Computational Biology Core
     address: 3 Davol Sq., Providence RI 02903
     brown_url: "https://www.brown.edu"
     cbc_url: "http://cbc.brown.edu"
-    ccv: Center for Computation and Visualization
-
+    cbc: Computational Biology Core
+    ccbhd: Center for Computational Biology of Human Disease
     menu:
       cbc:
         - name: About
@@ -26,6 +26,12 @@ params:
         - name: Blog
           url: https://cbc.brown.edu/blog/
 
+    footer:
+      secondcolumn:
+      - "**Acknowledgements**"
+      - Research reported on this website is supported by an Institutional Development
+        Award (IDeA) from the National Institute of General Medical Sciences of the
+        National Institutes of Health under grant number P20GM109035.
 
 
 # Menu items
