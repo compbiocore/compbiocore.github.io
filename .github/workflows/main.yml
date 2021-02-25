@@ -5,6 +5,7 @@ name: Build Cards
 # Controls when the action will run. 
 on:
   workflow_dispatch:
+  repository_dispatch:
   push:
     branches: [ hugo-site ]
   pull_request:
