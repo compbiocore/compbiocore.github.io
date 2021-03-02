@@ -19,9 +19,9 @@ gulp.task('sass', () => {
 });
 
 // Watch asset folder for changes
-gulp.task('watch', ['sass'], () => {
+gulp.task('watch', gulp.series('sass', () => {
   gulp.watch('src/styles/*', ['sass']);
-});
+}));
 
 // Start Hugo Server
 gulp.task('hugo-server', () => {
@@ -29,4 +29,4 @@ gulp.task('hugo-server', () => {
 });
 
 // Set default task to `watch`
-gulp.task('default', ['watch', 'hugo-server']);
+gulp.task('default', gulp.series('watch', 'hugo-server'));
