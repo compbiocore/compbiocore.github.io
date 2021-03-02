@@ -5,7 +5,7 @@ var exec = require('child_process').exec;
 
 
 // Run node to get data and save them into data folder
-gulp.task('data', () => {
+gulp.task('data', async () => {
   exec('npm run getdata')
 });
 
