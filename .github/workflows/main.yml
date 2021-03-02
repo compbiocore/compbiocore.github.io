@@ -30,8 +30,20 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: after npm
+      - name: setup
         run: |
-          #go get -u -v github.com/gohugoio/hugo
+          go get -u -v github.com/gohugoio/hugo
           npm install -g gulp
-          #gulp sass data && hugo
+      - name: Build
+      #  run: gulp sass data && hugo
+      #- name: Deploy
+      #  uses: peaceiris/actions-gh-pages@v3
+      #  with:
+      #    github_token: ${{ secrets.GHPAGES_MKDOCS }}
+      #    publish_dir: ./public
+      #    publish_branch: master
+     #- name: Deploy 🚀
+        #uses: JamesIves/github-pages-deploy-action@4.0.0
+        #with:
+          #branch: gh-pages # The branch the action should deploy to.
+          #folder: build
