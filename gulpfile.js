@@ -10,7 +10,7 @@ gulp.task('data', () => {
 });
 
 // Compile `*.sass`
-gulp.task('sass', () => {
+gulp.task('sass', async () => {
   gulp.src('src/styles/main.sass')
     .pipe(sass({
       outputStyle : 'compressed'
@@ -20,7 +20,7 @@ gulp.task('sass', () => {
 
 // Watch asset folder for changes
 gulp.task('watch', gulp.series('sass', () => {
-  gulp.watch('src/styles/*', ['sass']);
+  gulp.watch('src/styles/*', gulp.series('sass'));
 }));
 
 // Start Hugo Server
