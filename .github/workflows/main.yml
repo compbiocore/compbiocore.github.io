@@ -39,7 +39,9 @@ jobs:
           #go get -u -v github.com/gohugoio/hugo
           npm install -g gulp
       - name: Build
-        run: gulp sass data && hugo
+        run: |
+          npm install 
+          gulp sass data && hugo
       #- name: Deploy
       #  uses: peaceiris/actions-gh-pages@v3
       #  with:
