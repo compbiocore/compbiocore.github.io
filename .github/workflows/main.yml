@@ -29,8 +29,8 @@ jobs:
         run: echo Hello, world!
       - name: before_install
         run: |
-          apt-get update
-          apt-get install node -y
+          sudo apt-get update
+          sudo apt-get install node -y
           go get -u -v github.com/gohugoio/hugo
           npm install -g gulp
           #gulp sass data && hugo
