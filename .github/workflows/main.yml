@@ -30,12 +30,16 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.80.0"
       - name: setup
         run: |
-          go get -u -v github.com/gohugoio/hugo
+          #go get -u -v github.com/gohugoio/hugo
           npm install -g gulp
-      #- name: Build
-      #  run: gulp sass data && hugo
+      - name: Build
+        run: gulp sass data && hugo
       #- name: Deploy
       #  uses: peaceiris/actions-gh-pages@v3
       #  with:
