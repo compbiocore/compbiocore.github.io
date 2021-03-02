@@ -27,10 +27,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-      - name: before_install
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: after npm
         run: |
-          sudo apt-get update
-          sudo apt-get install node -y
-          go get -u -v github.com/gohugoio/hugo
+          #go get -u -v github.com/gohugoio/hugo
           npm install -g gulp
           #gulp sass data && hugo
