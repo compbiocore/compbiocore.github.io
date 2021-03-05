@@ -5,8 +5,8 @@ var exec = require('child_process').exec;
 
 
 // Run node to get data and save them into data folder
-gulp.task('data', async () => {
-  exec('npm run getdata')
+gulp.task('data', (cb) => {
+  exec('npm run getdata', cb)
 });
 
 // Compile `*.sass`
@@ -19,7 +19,7 @@ gulp.task('sass', async () => {
 });
 
 // Watch asset folder for changes
-gulp.task('watch', gulp.series('sass', () => {
+gulp.task('watch', gulp.series('sass', async () => {
   gulp.watch('src/styles/*', gulp.series('sass'));
 }));
 

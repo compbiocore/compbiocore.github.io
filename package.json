@@ -13,7 +13,7 @@
   "dependencies": {
     "cryptiles": "*",
     "dotenv": "*",
-    "gulp": "*",
+    "gulp": "^4.0.2",
     "gulp-sass": "*",
     "hoek": "*",
     "js-base64": "*",
