@@ -55,7 +55,7 @@ githubRequest(`orgs/${organization}/repos?per_page=100`).then((values) => {
   }))
 }).then((values) => {
   // decode and save readme content
-  const str = values.map((item) => yaml.safeLoad(Base64.decode(item.content)));
+  const str = values.map((item) => yaml.load(Base64.decode(item.content)));
   fs.writeFileSync('data/info.json', JSON.stringify(str, null, 2));
   console.log('Data written to data/info.json');
 });

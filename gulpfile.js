@@ -24,9 +24,9 @@ gulp.task('watch', gulp.series('sass', async () => {
 }));
 
 // Start Hugo Server
-gulp.task('hugo-server', () => {
-  exec('hugo server -D')
+gulp.task('hugo-server', (cb) => {
+  exec('hugo server -D', cb)
 });
 
 // Set default task to `watch`
-gulp.task('default', gulp.series('watch', 'hugo-server'));
+gulp.task('default', gulp.parallel('watch', 'hugo-server'));
