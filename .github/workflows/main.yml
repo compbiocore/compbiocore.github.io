@@ -36,6 +36,10 @@ jobs:
           hugo-version: "0.80.0"
       - name: setup
         run: |
+          cp .env.template .env
+          sed -i 's/GITHUB_TOKEN=/GITHUB_TOKEN=${{ secrets.GHPAGES_MKDOCS }}/' .env
+          sed -i 's/GITHUB_USER=/GITHUB_USER=ashokrags/' .env
+          cat .env
           #go get -u -v github.com/gohugoio/hugo
           npm install -g gulp
       - name: Build
