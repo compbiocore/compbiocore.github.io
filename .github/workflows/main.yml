@@ -6,7 +6,7 @@ name: Build Cards
 on:
   workflow_dispatch:
   schedule:
-    - cron: '* */1 * * *'
+    - cron: '0 0 * * *'
   push:
     branches: [ hugo-site ]
   pull_request:
