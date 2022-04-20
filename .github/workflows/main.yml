@@ -1,5 +1,4 @@
 # This is a workflow for generating a new index.html in master branch that generates static website
-
 name: Build Cards
 
 # Controls when the action will run. 
