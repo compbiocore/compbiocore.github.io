@@ -1,0 +1,28 @@
+<!-- navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary d-flex flex-row">
+	<div class="navbar__logo__item__ d-flex flex-row">
+		{{ readFile "static/svg/cbc-outline.svg" | safeHTML }}
+		<div class="nav__title">
+			<a href="https://www.brown.edu/research/projects/computational-biology-of-human-disease/computational-biology-core">
+				<small class="logo-type">Center for Computational Biology of Human Disease</small>
+			</a>
+			<a href="http://cbc.brown.edu/">
+				<p class="logo-type"><strong>Computational Biology Core</strong></p>
+			</a>
+		</div>
+	</div>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav">
+			{{ range .Site.Params.menu.cbc }}
+			<li><a href="{{ .url }}">{{ .name }}</a></li>
+			{{ end }}
+		</ul>
+	</div>
+
+</nav>
+<!-- end navbar -->

@@ -1,0 +1,11 @@
+<div class="title-container">
+    <div class="title-logo">
+        <!-- <a href="{{.Site.Params.brown_url}}">{{ readFile "/static/svg/brown-large.svg" | safeHTML }}</a> -->
+        <a href="{{.Site.Params.cbc_url}}">{{ readFile "/static/svg/cbc-outline.svg" | safeHTML }}</a>
+    </div>
+    <div class="title-group">
+        <h1 class="title">{{ .Site.Title }}</h1>
+        <hr></hr>
+        <p class="description">{{ .Site.Params.description }}</p>
+    </div>
+</div>

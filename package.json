@@ -1,0 +1,26 @@
+{
+  "name": "cbc-hugo-docs-index",
+  "version": "1.0.0",
+  "description": "CBC Projects Index",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "getdata": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Gelin",
+  "license": "MIT",
+  "dependencies": {
+    "cryptiles": "*",
+    "dotenv": "*",
+    "gulp": "^4.0.2",
+    "gulp-sass": "*",
+    "hoek": "*",
+    "js-base64": "*",
+    "js-yaml": "*",
+    "lodash": "*",
+    "minimatch": "*",
+    "natives": "*",
+    "request": "*"
+  }
+}

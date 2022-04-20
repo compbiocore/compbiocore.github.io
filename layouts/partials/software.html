@@ -1,0 +1,47 @@
+<div id="software" class="section">
+    <div class="section-title">
+        <h1>Software</h1>
+        <hr></hr>
+    </div>
+    <div class="section-group">
+    {{ range .Site.Data.info }}
+        {{ if eq .type "software" }}
+        <div class="group-card">
+            <div class="authors">
+                <small class="maintainers">Maintainers:</small>
+            {{ range $i, $e := .authors }}
+                <a href="https://www.github.com/{{ $e.github_user }}">
+                    <small>{{ if $i }}&#x25E6; {{ end }}{{ $e.name }}</small>
+                </a>
+            {{ end }}
+            </div>
+            <a href="{{ if .docs_url }}{{ .docs_url }}{{ else }}https://compbiocore.github.io/{{ .repo }}{{ end }}">
+                <div class="group-card-title">
+                    <h6>{{ .site_name | markdownify }}</h6>
+                    <a href="{{ if .repo_url }}{{ .repo_url }}{{ else }}https://github.com/compbiocore/{{ .repo }}{{ end }}">
+                        <span class="fab fa-2x fa-github"></span>
+                    </a>
+                </div>
+                <p>{{ .site_description | markdownify }}</p>
+            </a>
+            <div class="group-status">
+                <img src="https://img.shields.io/travis/compbiocore/{{.repo }}.svg?style=flat-square"/>
+                <a href="{{ if .docs_url }}{{ .docs_url }}{{ else }}https://compbiocore.github.io/{{ .repo }}{{ end }}">
+                    <img src="https://img.shields.io/badge/docs-stable-blue.svg?style=flat-square"/>
+                </a>
+                {{ if .doi }}
+                <a href='https://doi.org/{{ .doi }}'>
+                    <img src='https://img.shields.io/badge/DOI-{{ replace (replace (replace .doi "/" "%2F") "_" "__") "-" "--" }}-purple.svg?style=flat-square'/>
+                </a>
+                {{ end }}
+                {{ if .pypi }}
+                <a href='https://pypi.org/project/{{ .site_name }}/'>
+                    <img src='https://img.shields.io/pypi/v/{{ .site_name }}.svg?style=flat-square'/>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    {{ end }}
+    </div>
+</div>
