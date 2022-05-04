@@ -9,6 +9,7 @@ const yaml = require('js-yaml');
 const token = process.env.GITHUB_TOKEN;
 const user = process.env.GITHUB_USER;
 const organization = 'compbiocore';
+const numPages = 5
 
 /**
  * Returns a promise that resolves to a Github API response.
@@ -35,20 +36,25 @@ const githubRequest = (path) => {
  * content using the readme API.
  *
  */
-githubRequest(`orgs/${organization}/repos?per_page=100`).then((values) => {
-  // gets the contents of the repos
-  return Promise.all(values.map((repo) => {
-    console.log(repo.name)
-    return githubRequest(`repos/${organization}/${repo.name}/contents`)
-  }));
-}).then((values) => {
+const promises = []; 
+for (let page=1; page < numPages + 1; page++) {
+    let url = `orgs/${organization}/repos?page=`+page; 
+    promises.push(githubRequest(url))
+}; 
+Promise.all(promises).then((values)=> {
+    const flatrepos = values.flat()
+    return Promise.all(flatrepos.map((repo) => {
+        return githubRequest(`repos/${organization}/${repo.name}/contents`)
+    })); 
+}).then((values)=>{
   // checks if the repo contains the docs folder
   return _.compact(_.flatten(values.map((content) =>
-    content.map((file) => {
-      if (Object.values(file).includes('ready.yml')) return file.url.split('/')[5];
+      Array.from(content).map((file) => {
+        if (Object.values(file).includes('ready.yml')) return file.url.split('/')[5];
     })
   )));
 }).then((values) => {
+  console.log(values)
   // gets contents from ready.yml of the repos that have docs folder
   return Promise.all(values.map((item) => {
     return githubRequest(`repos/${organization}/${item}/contents/ready.yml`);
@@ -57,5 +63,5 @@ githubRequest(`orgs/${organization}/repos?per_page=100`).then((values) => {
   // decode and save readme content
   const str = values.map((item) => yaml.load(Base64.decode(item.content)));
   fs.writeFileSync('data/info.json', JSON.stringify(str, null, 2));
-  console.log('Data written to data/info.json');
+  console.log('New data written to data/info.json');
 });
