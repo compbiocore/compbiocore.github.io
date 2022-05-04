@@ -9,7 +9,7 @@ const yaml = require('js-yaml');
 const token = process.env.GITHUB_TOKEN;
 const user = process.env.GITHUB_USER;
 const organization = 'compbiocore';
-const numPages = 5
+const numPages = 20
 
 /**
  * Returns a promise that resolves to a Github API response.
