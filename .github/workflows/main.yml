@@ -44,8 +44,10 @@ jobs:
           sed -i 's/GITHUB_USER=/GITHUB_USER=ashokrags/' .env
           cat .env
           # go get -u -v github.com/gohugoio/hugo
-          pages=$(python3 git.py) 
-          echo $pages
+          pages=$(python git.py) 
+          echo "Number of pages is " + $pages
+          sed -i 's/const numPages = .*$/const numPages = ${pages}/' index.js
+          cat index.js
           npm install -g gulp
       - name: Build
         run: |
