@@ -33,6 +33,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "0.80.0"
+          python-version: 3.8
       - name: setup
         run: |
           cp .env.template .env
@@ -40,6 +41,8 @@ jobs:
           sed -i 's/GITHUB_USER=/GITHUB_USER=ashokrags/' .env
           cat .env
           # go get -u -v github.com/gohugoio/hugo
+          pages=$(python3 git.py) 
+          echo $pages
           npm install -g gulp
       - name: Build
         run: |
