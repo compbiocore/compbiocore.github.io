@@ -1,8 +1,8 @@
 import requests 
 import os
 
-username = os.environ.get(${{ secrets.GITHUB_USER }} 
-password = os.environ.get(${{ secrets.GITHUB_TOKEN }} 
+username = os.environ['GITHUB_USER']
+password = os.environ['GITHUB_TOKEN']
 
 EMAIL_SENDER = os.environ.get("EMAIL_SENDER")
 EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
