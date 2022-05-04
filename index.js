@@ -33,7 +33,8 @@ const githubRequest = (path) => {
  * The procedure below gets a list of repositories for the organization using
  * the repos API, for each repo, it checks if there is a docs folder using the
  * contents API. If the repo has a docs folder, then we get the README file
- * content using the readme API.
+ * content using the readme API. Script has been edited to allow for 
+ * the user to return results from up to 50 repo pages. 
  *
  */
 const promises = []; 
