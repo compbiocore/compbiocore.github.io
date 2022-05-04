@@ -1,7 +1,12 @@
 import requests 
+import os
 
-username = 'j-stat'
-password = "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"
+username = os.environ.get(${{ secrets.GITHUB_USER }} 
+password = os.environ.get(${{ secrets.GITHUB_TOKEN }} 
+
+EMAIL_SENDER = os.environ.get("EMAIL_SENDER")
+EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
+EMAIL_RECIPIENT = os.environ.get("EMAIL_RECIPIENT")
 
 api = "https://api.github.com/orgs/compbiocore/repos"
 
