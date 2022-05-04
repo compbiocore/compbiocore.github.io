@@ -35,6 +35,9 @@ jobs:
           hugo-version: "0.80.0"
           python-version: 3.8
       - name: setup
+        env: 
+          GITHUB_USER: ${{ secrets.GITHUB_USER }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cp .env.template .env
           sed -i 's/GITHUB_TOKEN=/GITHUB_TOKEN=${{ secrets.GHPAGES_MKDOCS }}/' .env
