@@ -5,9 +5,9 @@
 [![License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](LINK)
 
 ## Overview
-Node-Hugo project that generates Brown's Computational Biology Core's Projects Index Website.
-We use Node.js to access GitHub's REST API and retrieve information about CBC's projects' repositories. The data is processed and written to `data/` which can then be used by Hugo to generate static pages.
-The website is continuously deployed to GitHub Pages using Travis CI.
+This repo houses a Node-Hugo project that generates Brown's Computational Biology Core's Projects Index Website located at: compbiocore.github.io.
+To generate this webpage, we use Node.js to access GitHub's REST API and retrieve information about the Computational Biology Core's projects from their respective GitHub repositories. Projects' repository data is then processed and written to the `data/` folder on this repo, which is then used by Hugo to generate a static web page providing helpful information about various software, projects, and workshops offered by Brown's Computaitonal Biology Core. 
+The website is continuously updated and deployed to GitHub Pages using GitHub Actions. 
 
 ## Getting Started
 
