@@ -23,30 +23,32 @@ Below will walk you through the steps performed by GitHub Actions to continuousl
 - [GitHub Access Token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
 
 
-### 1. Install
+### Step 1. Install
 Install gulp and dependencies:
 ```
 npm install -g gulp
 npm install 
 ```
 
-### 2. Set up `.env` file with GitHub Access Token
+### Step 2. Set up `.env` file with GitHub Access Token
 Sensitive environment variables are stored in the .env file. This file is included in .gitignore intentionally, so that it is never committed.
 - Create a `.env` file and copy the contents of `.env.template` into it
 - Add your GitHub username to the .env file 
 - Get your [GitHub Access Token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and add to the `.env` file (it is strongly recommended you use GitHub secrets to do this).
 
-### 3. Update index.html
+### Step 3. Update index.html
 Get the data for updates using gulp: 
 ```bash
 gulp sass data
 ```
 The above step runs javascript code that updates the index.html file located in the `public/` folder. This updated index.html file is then what is used by GitHub Pages to generate the static web page. 
 
-NOTE: The javascript code used in this step fetches project repo data from from the compbiocore organizational repo and examines for a `docs/` folder and `ready.yml` file in the project repo; if the project repo has these componenets, then the project repo will be published to the website. If the repo does not have these components, it will be ignored. The updated javascript allows for collecting repo information from an organizational repo with up to 50 pages of data. 
+NOTE: The javascript code used in this step fetches project repo data from from the compbiocore organizational repo and examines for a `docs/` folder and a `ready.yml` file summarizing the project in the project repo; if the project repo has these componenets, then the project repo will be published to the website. If the repo does not have these components, it will be ignored. To publish your project, make sure it has these components! 
 
-### 3. GitHUB Actions Deployment
-The site is deployed to GitHub Pages using GitHub Actions. The updated index.html file created in the previous step gets pushed to the master branch, which is the branch used as the publishing source for GitHub Pages. Note that any changes to the site should be done in the Hugo project (`hugo-site` branch). Never commit to `master`, as that branch will be updated by GitHub Actions whenever a new build is done and is the branch used for publishing the website.
+### Step 4. GitHub Actions Deployment
+The site is deployed to GitHub Pages using GitHub Actions. The updated index.html file created in Step 3 along with the entire contents of the `public/` directory gets pushed to the master branch, which is the branch used as the publishing source for GitHub Pages. GitHub Actions is set up as a cron job and is scheduled to run once weekly.  
+
+IMPORTANT NOTE: that any changes to the site should be done in the Hugo project (`hugo-site` branch). Never commit to `master`, as that branch will be updated by GitHub Actions whenever a new build is done and is the branch used for publishing the website. 
 
 ### Appendix: Local Deployment
 If you downloaded the repo and are following along locally, follow the above steps and then cd to the `public/` directory and start the server as follows: 
