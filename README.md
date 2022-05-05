@@ -7,10 +7,12 @@
 ## Overview
 This repo houses a Node-Hugo project that generates Brown's Computational Biology Core's Projects Index Website located at: https://compbiocore.github.io.
 
-To generate this webpage, we use Node.js to access GitHub's REST API and retrieve information about the Computational Biology Core's projects from their respective GitHub repositories. Projects' repository data is then processed and written to the `data/` folder on this repo, which is then used by Hugo to generate a static web page providing helpful information about various software, projects, and workshops offered by Brown's Computaitonal Biology Core. 
+To generate this webpage, we use Node.js to access GitHub's REST API and retrieve information about the Computational Biology Core's projects from their respective GitHub repositories. Project repository data is then processed and written to the `data/` folder on this repo, which is then processed by Hugo to generate a static web page providing information about various software, tutorials, and workshops offered by Brown's Computational Biology Core. 
 The website is continuously updated and deployed to GitHub Pages using GitHub Actions. 
 
 ## Getting Started
+
+Below will walk you through the steps performed by GitHub Actions to continuously update and deploy the Computational Biology Core's Projects Index Website page. To get a better feel for the steps involved, feel free to download the repo (via git clone) and follow the steps below. 
 
 ### Prerequisites
 
@@ -22,37 +24,32 @@ The website is continuously updated and deployed to GitHub Pages using GitHub Ac
 
 
 ### Install
-Install dependencies:
+Install gulp and dependencies:
 ```
-npm install
+npm install -g gulp
+npm install 
 ```
 
 ### Set up `.env` file with GitHub Access Token
 Sensitive environment variables are stored in the .env file. This file is included in .gitignore intentionally, so that it is never committed.
-- Create a `.env` file and copy into it the contents of `.env.template`
-- Get your [GitHub Access Token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and add to the `.env` file.
+- Create a `.env` file and copy the contents of `.env.template` into it
+- Add your GitHub username to the .env file 
+- Get your [GitHub Access Token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and add to the `.env` file (it is strongly recommended you use GitHub secrets to do this).
 
-### Local development
-Get the data
+### Update index.html
+Get the data for updates using gulp: 
 ```bash
-gulp data
+gulp sass data
 ```
-Start gulp to watch and compile `.sass`
-```bash
-# in a terminal window
-gulp
-```
-Start the server
-```bash
-# in a different terminal window
-hugo serve -D
-```
+The above step runs javascript code that updates the index.html file located in the `public/` folder. This updated index.html file is what is used by GitHub pages to generate the static web page. 
 
-### Build site locally
-This will build the site in the `public/` directory.
+### GitHUB Actions Deployment
+The site is deployed to GitHub Pages using GitHub Actions. The updated index.html file created in the previous step gets pushed to the master branch, which is the branch used as the publishing source for GitHub Pages. Note that any changes to the site should be done in the Hugo project (`hugo-site` branch). Never commit to `master`, as that branch will be updated by GitHub Actions whenever a new build is done and is the branch used for publishing the website.
+
+### Local Deployment
+If you downloaded the repo and are following along locally, follow the above steps and then cd to the `public/` directory and start the server as follows: 
 ```bash
-hugo
+hugo 
 ```
 
-### Deployment
-The site is deployed to GitHub Pages using Travis. Changes to the site should be done in the Hugo project (`hugo-site` branch). Never commit to `master`, that branch will be updated by Travis whenever a new build is done.
+The above will generate the web page at a localhost address. Copy and paste that address into your terminal to view. 
