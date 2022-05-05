@@ -39,10 +39,11 @@ Sensitive environment variables are stored in the .env file. This file is includ
 Get the data for updates using gulp: 
 ```bash
 gulp sass data
+hugo
 ```
-The above step runs javascript code that updates the index.html file located in the `public/` folder. This updated index.html file is then what is used by GitHub Pages to generate the static web page. 
+The above step runs javascript code that updates the info.json file in the `data/`folder. This updated info.json file is then what is used by Hugo to generate an index.html file that GitHub Pages uses to generate the static web page. 
 
-NOTE: The javascript code used in this step fetches project repo data from from the compbiocore organizational repo and examines for a `docs/` folder and a `ready.yml` file summarizing the project in the project repo; if the project repo has these componenets, then the project repo will be published to the website. If the repo does not have these components, it will be ignored. To publish your project, make sure it has these components! 
+NOTE: The javascript code used in this step fetches project repo data from from the compbiocore organizational repo and examines each project repo for a `docs/` folder and a `ready.yml` file summarizing the project; if the project repo has these componenets, then the project repo will be published to the website. If the repo does not have these components, it will be ignored. To publish your project, make sure it has these components! 
 
 ### Step 4. GitHub Actions Deployment
 The site is deployed to GitHub Pages using GitHub Actions. The updated index.html file created in Step 3 along with the entire contents of the `public/` directory gets pushed to the master branch, which is the branch used as the publishing source for GitHub Pages. GitHub Actions is set up as a cron job and is scheduled to run once weekly.  
@@ -52,7 +53,7 @@ IMPORTANT NOTE: Any changes to the site should be done in the Hugo project (`hug
 ### Appendix: Local Deployment
 If you downloaded the repo and are following along locally, follow the above steps and then cd to the `public/` directory and start the server as follows: 
 ```bash
-hugo 
+hugo serve -D
 ```
 
 The above will generate the web page at a localhost address. Copy and paste that address into your terminal to view. 
