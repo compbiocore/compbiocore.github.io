@@ -4,11 +4,7 @@ name: Build Cards
 # Controls when the action will run. 
 on:
   schedule:
-    - cron: '23 11 1,5 * *'
-  push:
-    branches: [ hugo-site ]
-  pull_request:
-    branches: [ hugo-site ]
+    - cron: '26 11 1,5 * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
