@@ -47,7 +47,7 @@ NOTE: The javascript code used in this step fetches project repo data from from 
 ### Step 4. GitHub Actions Deployment
 The site is deployed to GitHub Pages using GitHub Actions. The updated index.html file created in Step 3 along with the entire contents of the `public/` directory gets pushed to the master branch, which is the branch used as the publishing source for GitHub Pages. GitHub Actions is set up as a cron job and is scheduled to run once weekly.  
 
-IMPORTANT NOTE: that any changes to the site should be done in the Hugo project (`hugo-site` branch). Never commit to `master`, as that branch will be updated by GitHub Actions whenever a new build is done and is the branch used for publishing the website. 
+IMPORTANT NOTE: Any changes to the site should be done in the Hugo project (`hugo-site` branch). Never commit to `master`, as that branch will be updated by GitHub Actions whenever a new build is done and is the branch used for publishing the website. 
 
 ### Appendix: Local Deployment
 If you downloaded the repo and are following along locally, follow the above steps and then cd to the `public/` directory and start the server as follows: 
