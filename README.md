@@ -7,12 +7,11 @@
 ## Overview
 This repo houses a Node-Hugo project that generates Brown's Computational Biology Core's Projects Index Website located at: https://compbiocore.github.io.
 
-To generate this webpage, we use Node.js to access GitHub's REST API and retrieve information about each of the Computational Biology Core's projects from their respective GitHub repositories. Project repository data is then processed and written to the `data/` folder on this repo, which is then processed by Hugo to generate a static web page providing information about various software, tutorials, and workshops offered by Brown's Computational Biology Core. 
-The website is continuously updated and deployed to GitHub Pages using GitHub Actions. 
+To generate this webpage, we use Node.js to access GitHub's REST API and retrieve information about each of the Computational Biology Core's projects from their respective GitHub repositories. Project repository data is then processed and written to the `data/` folder on this repo, which is then processed by Hugo to generate a static web page providing information about various software, tutorials, and workshops offered by Brown's Computational Biology Core. The website is continuously updated and deployed to GitHub Pages using GitHub Actions. 
 
 ## Getting Started
 
-Below will walk you through the steps performed by GitHub Actions to continuously update and deploy the Computational Biology Core's Projects Index Website page. To get a better feel for the steps involved, feel free to download the repo (via git clone) and follow the steps below. 
+Below will walk you through the steps performed by GitHub Actions to continuously update and deploy the Computational Biology Core's Projects Index Web Page. To get a better feel for the steps involved, feel free to download the repo (via git clone) and follow the steps below. 
 
 ### Prerequisites
 
