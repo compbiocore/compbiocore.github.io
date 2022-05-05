@@ -1,4 +1,4 @@
-# CBC Projects Index Page
+# CBC Projects Index WebPage
 
 
 [![Travis](https://img.shields.io/travis/compbiocore/projects-index-page.svg?style=flat-square)](https://travis-ci.org/compbiocore/projects-index-page)
