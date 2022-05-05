@@ -43,8 +43,7 @@ hugo
 ```
 The above step runs javascript code that updates the info.json file in the `data/` folder. This updated info.json file is then what is used by Hugo to generate an index.html file that GitHub Pages uses to generate the static web page. 
 
-### IMPORTANT NOTE:
-The javascript code used in this step fetches project repo data from from the compbiocore organizational repo and examines each project repo for a `docs/` folder and a `ready.yml` file summarizing the project; if the project repo has these componenets, then the project repo will be published to the website. If the repo does not have these components, it will be ignored. To publish your project, make sure it has these components! 
+IMPORTANT NOTE: The javascript code used in this step fetches project repo data from from the compbiocore organizational repo and examines each project repo for a `docs/` folder and a `ready.yml` file summarizing the project; if the project repo has these componenets, then the project repo will be published to the website. If the repo does not have these components, it will be ignored. To publish your project, make sure it has these components! 
 
 ### Step 4. GitHub Actions Deployment
 The site is deployed to GitHub Pages using GitHub Actions. The updated index.html file created in Step 3 along with the entire contents of the `public/` directory gets pushed to the master branch, which is the branch used as the publishing source for GitHub Pages. GitHub Actions is set up as a cron job and is scheduled to run once weekly.  
